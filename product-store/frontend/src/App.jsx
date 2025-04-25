@@ -1,11 +1,14 @@
-import { Button } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
+import { Routes } from "react-router-dom";
 
 function App() {
 
   return (
-    <>
-      <Button>Hello</Button>
-    </>
+    <Box minH={"100vh"}>
+      <Routes>
+
+      </Routes>      
+    </Box>
   )
 }
 
