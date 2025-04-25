@@ -1,4 +1,8 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
 // Basic theme config
 const theme = extendTheme({
@@ -7,8 +11,10 @@ const theme = extendTheme({
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
+    <BrowserRouter>
+      <ChakraProvider theme={theme}>
+        <App />
+      </ChakraProvider>
+    </BrowserRouter>
   </React.StrictMode>
 )
